@@ -30,6 +30,9 @@
                                 <rect key="frame" x="148" y="557" width="119" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="登録"/>
+                                <connections>
+                                    <action selector="didClickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6HN-ck-Pj2"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="タイトル" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="691-HG-CxH">
                                 <rect key="frame" x="35" y="242" width="344" height="30"/>
@@ -49,6 +52,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="OIB-AD-Uef" id="Rhc-Bx-AXr"/>
+                        <outlet property="textFieldForContent" destination="691-HG-CxH" id="3wz-DE-mAk"/>
+                        <outlet property="textFieldForTitle" destination="0mQ-ds-GF3" id="Yzw-Yv-ODi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
